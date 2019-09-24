@@ -5,7 +5,8 @@ const range = function(input1,input2){
         for(let i = input1; i <= input2; i++){
             add += i;
         }
-    }else{
+    }
+    else {
         return "ERROR"
     }
     return add;
@@ -15,11 +16,11 @@ const sumAll = function() {
     //this condition statement checks for (non-numbers) & (negative numbers)
     if((!isNaN(arguments[0]) && !isNaN(arguments[1])) && (arguments[0]>=0 && arguments[1]>= 0)){
         if (arguments[1] < arguments[0]){
-            //console.log("reached here");
+    
             return range(arguments[1],arguments[0]);
         } 
         else {
-            //console.log("got here too")
+        
             return range(arguments[0],arguments[1]);
         }
     }
